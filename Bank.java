@@ -39,7 +39,7 @@ public class Bank {
             return  removed;
     }
 
-    public void printAllAccounts(String searchId) {
+    public void printAllAccounts() {
         for (String currentId : idList) {
             if (idAccountMap.containsKey(currentId)) {
                 idAccountMap.get(currentId).printDetails();
