@@ -10,9 +10,9 @@ public class SavingsAccountTest {
             savingsAccount.setRate(3.5F);
             assertEquals(3.5, savingsAccount.getRate());
             savingsAccount.setLowRate(2);
-            assertEquals(2, BankAccount.getLowRate());
+            assertEquals(2, savingsAccount.getLowRate());
             savingsAccount.setHighRate(10);
-            assertEquals(10, BankAccount.getHighRate());
+            assertEquals(10, savingsAccount.getHighRate());
         }
         //test to make sure interest is added to balance
         @Test
