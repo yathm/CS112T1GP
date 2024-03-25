@@ -2,6 +2,7 @@ public class SavingsAccount extends BankAccount {
     //initialise variables
     private float rate;
 
+    //constructor to extend to super class and inherit fields
     public SavingsAccount(String accountName, String accountID, float rate) {
         super(accountName, accountID);
         setRate(rate);
