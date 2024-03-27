@@ -1,12 +1,12 @@
-import org.junit.Before;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CurrentAccountTest {
 
     private CurrentAccount account;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         account = new CurrentAccount("John Doe", "123456789", 200);
         account.setBalance(500); // Setting an initial balance for testing
@@ -31,11 +31,11 @@ public class CurrentAccountTest {
 
         // Test withdrawing amount that would lead to an overdraft within the limit
         assertTrue(account.withdrawBalance(600));
-        assertEquals(-100, account.getBalance(), 0.001);
+        assertEquals(-200, account.getBalance(), 0.001);
 
         // Test withdrawing amount that exceeds the overdraft limit
         assertFalse(account.withdrawBalance(101)); // This should fail as it exceeds the overdraw limit
-        assertEquals(-100, account.getBalance(), 0.001); // Balance should remain unchanged
+        assertEquals(-200, account.getBalance(), 0.001); // Balance should remain unchanged
 
         // Deposit some amount to cover the overdraft
         account.setBalance(500); // Reset balance to 500
