@@ -1,3 +1,6 @@
+// Alisha Attigan
+// https://github.com/yathm/CS112T1GP
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

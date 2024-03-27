@@ -1,3 +1,6 @@
+// Yatharth Mittal
+// https://github.com/yathm/CS112T1GP
+
 public abstract class BankAccount {
     private float lowRate;
     private float highRate;

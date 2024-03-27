@@ -1,3 +1,6 @@
+// Alisha Attigan
+// https://github.com/yathm/CS112T1GP
+
 public class SavingsAccount extends BankAccount {
     //initialise variables
     private float rate;
